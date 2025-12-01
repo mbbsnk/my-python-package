@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: my-python-package
+Version: 0.1.0
+Summary: A sample Python package published to GitHub Packages
+Author: Your Name
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
