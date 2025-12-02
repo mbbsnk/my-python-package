@@ -31,11 +31,13 @@ jobs:
     - name: Build package
       run: python -m build
 
-    - name: Publish package to GitHub Packages
+- name: Publish package to PyPI
+      # The TWINE_PASSWORD is now the new secret: PYPI_API_TOKEN
       env:
-        TWINE_USERNAME: mbbsnk
-        TWINE_PASSWORD: ${{ secrets.GH_TOKEN }}
+        TWINE_USERNAME: __token__ 
+        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
       run: |
+        # Use the official PyPI upload URL
         python -m twine upload \
-          --repository-url https://pypi.pkg.github.com/mbbsnk/my-python-package/ \
+          --repository-url https://upload.pypi.org/legacy/ \
           dist/*
