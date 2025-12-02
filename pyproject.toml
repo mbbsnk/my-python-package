@@ -1,5 +1,5 @@
 [project]
-name = "my-python-package"
+name = "pypi-vegaone"
 version = "0.1.0"
 description = "A sample Python package published to GitHub Packages"
 readme = "README.md"
