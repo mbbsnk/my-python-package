@@ -6,7 +6,7 @@ on:
 #   push:
 #     branches:
 #       - workflow-test
-    # Uncomment the next lines if you want to trigger on tags
+    # Uncomment the next lines if you want to trigger on tags#
     # tags:
     #   - 'v*'
 
