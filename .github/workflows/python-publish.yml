@@ -37,5 +37,5 @@ jobs:
         TWINE_PASSWORD: ${{ secrets.GH_TOKEN }}
       run: |
         python -m twine upload \
-          --repository-url https://upload.pypi.pkg.github.com/mbbsnk/my-python-package/ \
+          --repository-url https://pypi.pkg.github.com/mbbsnk/my-python-package/ \
           dist/*
