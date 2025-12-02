@@ -1,4 +1,4 @@
-name: Publish Python Package
+name: Publish Python Packages
 
 # Trigger workflow on push to main or on tag push
 on:
